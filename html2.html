@@ -15,14 +15,18 @@
   <style>
     html,
     body {
-      height: 100%;
-      padding: 0;
-      margin: 0;
-      background: #f2e5e4;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: url("anhdep.jpg");
+  background-size: cover; /* Đảm bảo ảnh nền phủ toàn bộ màn hình */
+  background-position: center; /* Đặt ảnh nền vào giữa màn hình */
+  background-repeat: no-repeat; /* Ngừng lặp lại ảnh nền */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
     .name {
       text-align: center;
@@ -35,7 +39,7 @@
       -webkit-background-clip: text;
       background-clip: text;
       font-size: 30px;
-      background-image: linear-gradient(to left, #A8DADC,#FFC0CB);
+      background-image: linear-gradient(to left,#a0dbf2, #a0dbf2);
       font-style: italic;
       font-family: 'Fleur De Leah';
     }
@@ -51,7 +55,7 @@
       -webkit-background-clip: text;
       background-clip: text;
       font-size: 30px;
-      background-image: linear-gradient(to left, #FF6699, #FF6699);
+      background-image: linear-gradient(to left, #79c7d9, #79c7d9);
       font-style: italic;
     }
 
@@ -333,8 +337,8 @@
         context.closePath();
         // create the fill
         var gradient = context.createLinearGradient(0, 0, settings.particles.size, 0); // Tạo gradient ngang
-        gradient.addColorStop(0, "#B8d9d3"); // Xanh
-        gradient.addColorStop(1, "#d9a3ac"); // Hồng
+        gradient.addColorStop(0, "#f2a7ca"); // Xanh
+        //gradient.addColorStop(1, "#ff97c4"); // Hồng
         context.fillStyle = gradient;
         context.fill();
         // create the image
@@ -385,7 +389,15 @@
   </script>
   <h2 class="name">Hoàng Diệu Thủy</h2>
   <h3 class="date"></h3>
-  <audio src="./sound/audio1.mp3" autoplay></audio>
+  <audio src="./sound/audio1.mp3" autoplay muted></audio>
+  <script>
+    document.body.addEventListener("click", function() {
+      var audio = document.querySelector("audio");
+      audio.muted = false; // Tắt chế độ mute sau khi người dùng tương tác
+      audio.play(); // Bắt đầu phát nhạc
+    });
+  </script>
+  
 </body>
 
 </html>
