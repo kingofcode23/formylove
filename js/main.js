@@ -31,9 +31,18 @@ function firstQuestion(){
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
       }).then(function(){
+        // Sau khi bấm nút xác nhận, phát nhạc
+        const audio = new Audio('./sound/sound.mp3'); // Đảm bảo rằng đường dẫn âm thanh đúng
+        audio.play().then(() => {
+          console.log("Nhạc đã phát!");
+        }).catch((error) => {
+          console.error("Lỗi khi phát âm thanh:", error);
+        });
+
         $('.content').show(200);
-      })
+      });
 }
+
 
  // switch button position
  function switchButton() {
