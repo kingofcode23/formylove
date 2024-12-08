@@ -12,7 +12,7 @@ const CONFIG = {
     btnReply: 'send',
     reply: 'cảm ơn em vì tất cả trong thời gian vừa qua nhưng...',
     mess: 'haizz có lẽ thì một lẫn nữa anh lại được cô ấy ưu ái đem lên bàn cân , thật ra anh thấy bản thân cũng chưa đủ tốt vì chưa thể quan tâm chăm sóc em tại thời điểm hiện tại như những gì em mong muốn , nên để giúp cô ấy đưa ra quyết định đơn giản hơn thì anh nghĩ hai ta đã đủ thời gian tìm hiểu rồi , mình dừng lại tại đây nhaaa . Chúc em sớm tìm được người mang lại hạnh phúc cho bản thân và lịch sử không lặp lại nữa nhaaa 🫡take care chú vịt vàng giúp anh đấy :V',
-    messDesc: "nếu có cơ hội  anh hi vọng chúng ta sẽ gặp lại nhau ở phiên bản tốt hơn mãi iuuu em",
+    messDesc: "nếu có cơ hội anh hi vọng chúng ta sẽ gặp lại nhau ở phiên bản tốt hơn của cả hai mãi iuuu em",
     btnAccept: 'nếu đọc được gòii thì phản hồi ở đây nhé',
    
 }
