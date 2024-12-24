@@ -144,7 +144,7 @@ $('#yes').click(function() {
                 // Khi người dùng đóng hộp thoại hoặc bấm vào nút "Confirm"
                 if (result.isConfirmed) {
                     // Nếu người dùng bấm vào nút "Confirm"
-                    window.location.href = 'https://www.facebook.com/hoang.luong.271';  // Mở trang Facebook của bạn
+                    window.location.href = 'https://www.nhaccuatui.com/video/still-miss-you-sinead-harnett.anFEaiNo93fYh.html';  // Mở trang Facebook của bạn
                 }
             })
         }
